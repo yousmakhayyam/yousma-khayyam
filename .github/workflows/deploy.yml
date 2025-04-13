@@ -2,12 +2,12 @@ name: Deploy MERN App to Azure
 
 on:
   push:
-    branches: [main]
+    branches: [staging]
 
 env:
   AZURE_WEBAPP_NAME: yousma-khayyam-a
   AZURE_STATIC_WEBAPP_NAME: yousma-khayyam-f
-  NODE_VERSION: '22.14.0'
+  NODE_VERSION: '22.14.0'z
 
 jobs:
   deploy_backend:
