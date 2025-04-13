@@ -4,9 +4,10 @@
   "description": "contact form backend for my app",
   "main": "index.js",
   "type": "module",
-  "scripts": {
-    "dev": " nodemon --delay 2.0 -r dotenv/config --experimental-json-modules src/index.js"
-  },
+"scripts": {
+  "start": "node -r dotenv/config --experimental-json-modules src/index.js",
+  "dev": "nodemon --delay 2.0 -r dotenv/config --experimental-json-modules src/index.js"
+},
   "author": "zohaib",
   "license": "ISC",
   "dependencies": {
