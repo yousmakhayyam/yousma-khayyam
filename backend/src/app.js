@@ -14,6 +14,7 @@ app.use(bodyParser.urlencoded({ limit: '15mb', extended: true }));
     res.send("Hello Zohaib");
 });
 
- app.use("/contact", contactRoute);
+ app.use("/contact", contactRoute);  
+ //for starting the flow again
 
 export default app;
