@@ -7,7 +7,7 @@ on:
 env:
   AZURE_WEBAPP_NAME: your-backend-app-name
   AZURE_STATIC_WEBAPP_NAME: your-frontend-app-name
-  NODE_VERSION: '22'
+  NODE_VERSION: '22.x'
 
 jobs:
   deploy_backend:
@@ -24,11 +24,11 @@ jobs:
     
     - name: Install backend dependencies
       working-directory: ./backend
-      run: npm start
+      run: npm install
     
     - name: Build backend
       working-directory: ./backend
-      run: npm run dev
+      run: npm install --production
     
     - name: Deploy to Azure Web App
       uses: azure/webapps-deploy@v2
