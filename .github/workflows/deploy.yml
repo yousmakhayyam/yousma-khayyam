@@ -30,6 +30,11 @@ jobs:
         working-directory: ./backend
         run: npm install --production
 
+      - name: Debug App Paths
+        run: |
+          echo "Frontend Path:"
+          ls frontend
+
       - name: Deploy to Azure Web App
         uses: azure/webapps-deploy@v2
         with:
