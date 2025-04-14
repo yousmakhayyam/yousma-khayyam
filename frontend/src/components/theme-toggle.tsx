@@ -17,5 +17,3 @@ export function ThemeToggle() {
     </Button>
   );
 }
-
-//for update
