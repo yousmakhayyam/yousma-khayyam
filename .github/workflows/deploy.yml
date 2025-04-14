@@ -66,4 +66,5 @@ jobs:
           app_location: "frontend"
           output_location: "frontend/dist"
           deployment_environment: "staging"
+          deployment_action: "upload"
           
