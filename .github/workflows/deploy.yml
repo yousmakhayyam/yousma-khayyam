@@ -67,3 +67,4 @@ jobs:
           app_location: "frontend"
           output_location: "dist"  
           repo_token: ${{ secrets.GITHUB_TOKEN }}
+          action: "upload"
